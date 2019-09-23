@@ -10,7 +10,9 @@
     <nav>
       <h2><a href="index.html">Техномарт</a></h2>
       <form action="#" method="get">
-        <input type="search" id="search" name="search" placeholder="Поиск:" autofocus>
+        <label for="search">
+          <input type="text" id="search" name="search">Поиск:
+        </label>
       </form>
       <a href="#">Закладки: 0</a>
       <a href="#">Корзина: 10</a>
@@ -24,6 +26,7 @@
 
     <div>
       <a href="#">Равшан Джамшутович</a>
+      <a href="#">Кнопка выхода</a>
       <ul>
         <li>
           <a href="#">Мои заказы</a>
@@ -100,8 +103,6 @@
           <label for="accumulator">Аккумуляторные</label>
           <input type="radio" name="radio" id="net">
           <label for="net">Сетевые</label>
-
-
         </fieldset>
         <button type="submit">Показать</button>
       </form>
@@ -122,10 +123,12 @@
             <a href="#">По функционалу</a>
           </li>
           <li>
-            <a href="#">Значок вверх</a>
+            <a href="#" aria-label=
+            "Значок сортировки «вверх»"></a>
           </li>
           <li>
-            <a href="#">Значок вниз</a>
+            <a href="#" aria-label=
+            "Значок сортировки «вниз»"></a>
           </li>
         </ul>
       </div>
@@ -351,26 +354,30 @@
       </p>
 
       <div>
-        <a href="#">vkontakte</a>
-        <a href="#">facebook</a>
-        <a href="#">instagram</a>
+        <ul>
+          <li><a href="#" aria-label="htmlacademy во вконтакте">vkontakte</a></li>
+          <li><a href="#" aria-label="htmlacademy в фейсбуке">facebook</a></li>
+          <li><a href="#" aria-label="htmlacademy в инстаграме">instagram</a></li>
+        </ul>
       </div>
 
       <div>
         <p>Обратная связь:<br>
-          <a href="#">mail@htmlacademy.ru</a></p>
+          <a href="#" aria-label="ссылка на email htmlacademy.ru">mail@htmlacademy.ru</a></p>
         </div>
         <div>
           <p>Разработано —<br>
-            <a href="htmlacademy.ru">htmlacademy.ru</a></p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на сайт htmlacademy.ru">htmlacademy.ru</a></p>
           </div>
         </div>
       </footer>
 
-      <!-- Для входа в личный кабинет -->
-      <section>
-
-      </section>
+      <!-- pop-up -->
+      <form action="#" method="get">
+        Товар добавлен в корзину!
+        <button type="submit">Оформить заказ</button>
+      </form>
+      <button type="button">Продолжить покупки</button>
 
       <!-- Здесь будет javascript -->
     </body>
