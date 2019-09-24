@@ -1,7 +1,15 @@
 body {
-  padding: ;
-  font-family: ;
-  background: ;
+  margin: 0;
+  padding: 0;
+
+  font-family: Cuprum, "PT Sans", sans-serif;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  min-width: 1200px;
+  font-size: 17px;
+
+  background-color: #ffffff;
 }
 
 .visually-hidden {
@@ -13,4 +21,83 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.header-navigation-up {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  widows: 1200px;
+  height: 42px;
+  background: #293449;
+
+}
+
+.header-navigation-down {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  width: 940px;
+  height: 60px;
+  background-color: #32425c;
+
+}
+
+.header-user-list,
+.features-item,
+.product-list {
+  list-style: none;
+}
+
+.header-navigation-up a,
+.header-navigation-down a {
+  color: #ffffff;
+}
+
+.header-navigation-up a:hover,
+.header-navigation-up a:focus,
+.header-navigation-down a:hover,
+.header-navigation-down a:focus {
+  background-color: #212a3a;
+}
+
+.features-item {
+  text-align: left;
+}
+
+.features-item-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+
+/* Service */
+
+.service {
+  color: #000000;
+
+  background-color: #f2f7f9;
+  width: 1200px;
+  height: 522px;
+}
+
+.service h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.service-slide-auto {
+  background-image: url("../img/service-auto.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
