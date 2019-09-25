@@ -3,11 +3,11 @@ body {
   padding: 0;
 
   font-family: Cuprum, "PT Sans", sans-serif;
+  font-size: 17px;
   line-height: 18px;
   font-weight: 400;
   color: #000000;
   min-width: 1200px;
-  font-size: 17px;
 
   background-color: #ffffff;
 }
@@ -29,6 +29,42 @@ a {
 
 h2 {
   text-transform: uppercase;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #cc3333;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.page-text {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .header-navigation-up {
@@ -55,7 +91,10 @@ h2 {
 
 .header-user-list,
 .features-item,
-.product-list {
+.product-list,
+.brands-list,
+.footer-navigation,
+.footer-social {
   list-style: none;
 }
 
@@ -80,6 +119,13 @@ h2 {
   line-height: 30px;
 }
 
+.filter-title {
+  margin-bottom: 13px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 
 /* Service */
 
@@ -100,4 +146,29 @@ h2 {
   background-image: url("../img/service-auto.png");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+
+
+/* Подвал сайта */
+
+.footer-navigation {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  widows: 1200px;
+  height: 42px;
+  background: #293449;
+
+}
+
+.social {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: #212a3a;
+    border-radius: 50%;
 }
