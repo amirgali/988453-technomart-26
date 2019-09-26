@@ -67,15 +67,20 @@ h2 {
   line-height: 24px;
 }
 
+/* Разметка header */
+
+.header-search {
+
+}
+
 .header-navigation-up {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 
-  widows: 1200px;
+  width: 1200px;
   height: 42px;
-  background: #293449;
-
+  background-color: #293449;
 }
 
 .header-navigation-down {
@@ -94,7 +99,8 @@ h2 {
 .product-list,
 .brands-list,
 .footer-navigation,
-.footer-social {
+.footer-social,
+.header-user {
   list-style: none;
 }
 
@@ -109,6 +115,62 @@ h2 {
 .header-navigation-down a:focus {
   background-color: #212a3a;
 }
+
+.header-info-title {
+  font-family: Cuprum;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 23px;
+  text-align: left;
+  color: #ee3643;
+
+  width: 196px;
+  height: 60px;
+}
+
+.header-info span {
+  font-size: 21px;
+  color: #e9292a;
+  text-align: left;
+  line-height: 21px;
+
+  width: 270px;
+  height: 45px;
+}
+
+.header-info p {
+  font-size: 14px;
+  color: #32425c;
+  text-align: center;
+  line-height: 24px;
+
+  width: 250px;
+  height: 13px;
+}
+
+.header-user {
+  font-size: 21px;
+  color: #000000;
+  text-align: left;
+  line-height: 21px;
+
+  width: 300px;
+  height: 45px;
+}
+
+.user-sign-up {
+  width: 121px;
+  height: 45px;
+}
+
+.user-register {
+  width: 150px;
+  height: 45px;
+}
+
+/* Разметка основного контента */
 
 .features-item {
   text-align: left;
@@ -157,18 +219,18 @@ h2 {
   line-height: 18px;
   color: #ffffff;
 
-  widows: 1200px;
+  width: 1200px;
   height: 42px;
   background: #293449;
 
 }
 
 .social {
-    display: inline-block;
-    vertical-align: middle;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    background-color: #212a3a;
-    border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  background-color: #212a3a;
+  border-radius: 50%;
 }
