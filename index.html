@@ -12,26 +12,25 @@
     <!-- 1. Верхнее меню -->
     <nav class="header-navigation-up">
       <a  class="logo" href="index.html"><img src="img/logo.png" width="220" height="47" alt="Логотип сайта «Техномарт»"> </a>
-      <form action="#" method="get">
-        <label >
-          <input type="text" name="search">Поиск:
-        </label>
-        <button type="submit" name="search"></button>
+      <form class="header-search" action="#" method="get">
+        <input class="search-field" type="text" name="header-search" placeholder="Поиск:">
+        <button class="search-submit" type="submit"></button>
       </form>
       <a href="#">Закладки: 0</a>
       <a href="#">Корзина: 0</a>
-      <a href="#">Оформить заказ</a>
+      <a class="booking" href="#">Оформить заказ</a>
     </nav>
     <!-- 2. Строчка с формой входа -->
-    <div>
-      <div class="header-info">
-        <h1 class="header-info-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <p><span>+7(812)555-05-55</span>г.Санкт-Петербург, ул. Конюшенная, д.19/8</p>
+    <div class="header-content">
+      <h1 class="header-info-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <div class="header-text">
+        <span class="tel">+7(812)555-05-55</span>
+        <p>г.Санкт-Петербург, ул. Конюшенная, д.19/8</p>
       </div>
-        <ul class="header-user">
-          <li class="user-sign-up"><a href="#">Войти</a></li>
-          <li class="user-register"><a href="#">Регистрация</a></li>
-        </ul>
+      <ul class="header-user">
+        <li class="user-sign-up"><a href="#">Войти</a></li>
+        <li class="user-register"><a href="#">Регистрация</a></li>
+      </ul>
     </div>
     <!-- 3. Основная навигация -->
     <nav class="header-navigation-down">
@@ -233,7 +232,7 @@
     </section>
   </main>
 
-    <!-- 9. Меню подвала -->
+  <!-- 9. Меню подвала -->
 
   <footer class="footer-navigation">
 

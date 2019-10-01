@@ -1,10 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
-
   font-family: Cuprum, "PT Sans", sans-serif;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 1.5em;
   font-weight: 400;
   color: #000000;
   min-width: 1200px;
@@ -50,47 +47,125 @@ h2 {
 }
 
 .title {
-  padding: 0;
-  margin: 0;
   vertical-align: middle;
   font-size: 30px;
-  line-height: 30px;
   font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
 }
 
 .page-text {
-  margin: 0;
-  padding: 0;
   font-size: 13px;
-  line-height: 24px;
 }
 
 /* Разметка header */
 
-.header-search {
-
-}
-
 .header-navigation-up {
   font-size: 17px;
-  line-height: 18px;
   color: #ffffff;
 
   width: 1200px;
-  height: 42px;
   background-color: #293449;
+
+  display: flex;
+  align-items: center;
 }
+.header-search {
+  min-width: 250px;
+}
+
+.header-search:hover,
+.header-search:hover .search-submit{
+  background-color: #212a3a;
+  color: #ffffff;
+}
+
+.search-field {
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #293449;
+  border: none;
+}
+
+.search-field::-webkit-input-placeholder {
+  color: #ffffff;
+  background: #293449;
+}
+.search-field:-moz-placeholder {
+  color: #ffffff;
+  background: #293449;
+}
+.search-field:-ms-input-placeholder {
+  color: #ffffff;
+  background: #293449;
+}
+
+.booking {
+  background-color: #63a63e;
+}
+
+/* Центральная часть header */
+
+.header-content {
+  display: flex;
+  width: 940px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-info-title {
+  font-style: italic;
+  font-size: 16px;
+  color: #ee3643;
+
+  width: 196px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+}
+
+.header-content .tel {
+  font-size: 21px;
+  color: #e9292a;
+}
+
+.header-content p {
+  font-size: 14px;
+
+  color: #32425c;
+  text-align: center;
+}
+
+
+
+.header-user {
+  display: flex;
+  font-size: 21px;
+  color: #000000;
+}
+
+.user-sign-up {
+}
+
+.user-register {
+}
+
+/* Нижняя часть header */
 
 .header-navigation-down {
   font-size: 17px;
-  line-height: 18px;
   color: #ffffff;
 
   width: 940px;
-  height: 60px;
   background-color: #32425c;
+
+  display: flex;
+  margin: auto;
 
 }
 
@@ -102,6 +177,7 @@ h2 {
 .footer-social,
 .header-user {
   list-style: none;
+  padding-left: 0;
 }
 
 .header-navigation-up a,
@@ -116,59 +192,6 @@ h2 {
   background-color: #212a3a;
 }
 
-.header-info-title {
-  font-family: Cuprum;
-  font-style: italic;
-  font-size: 16px;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 23px;
-  text-align: left;
-  color: #ee3643;
-
-  width: 196px;
-  height: 60px;
-}
-
-.header-info span {
-  font-size: 21px;
-  color: #e9292a;
-  text-align: left;
-  line-height: 21px;
-
-  width: 270px;
-  height: 45px;
-}
-
-.header-info p {
-  font-size: 14px;
-  color: #32425c;
-  text-align: center;
-  line-height: 24px;
-
-  width: 250px;
-  height: 13px;
-}
-
-.header-user {
-  font-size: 21px;
-  color: #000000;
-  text-align: left;
-  line-height: 21px;
-
-  width: 300px;
-  height: 45px;
-}
-
-.user-sign-up {
-  width: 121px;
-  height: 45px;
-}
-
-.user-register {
-  width: 150px;
-  height: 45px;
-}
 
 /* Разметка основного контента */
 
@@ -178,13 +201,11 @@ h2 {
 
 .features-item-title {
   font-size: 24px;
-  line-height: 30px;
 }
 
 .filter-title {
   margin-bottom: 13px;
   font-size: 13px;
-  line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -196,12 +217,10 @@ h2 {
 
   background-color: #f2f7f9;
   width: 1200px;
-  height: 522px;
 }
 
 .service h2 {
   font-size: 30px;
-  line-height: 30px;
 }
 
 .service-slide-auto {
@@ -210,26 +229,20 @@ h2 {
   background-repeat: no-repeat;
 }
 
-
-
 /* Подвал сайта */
 
 .footer-navigation {
   font-size: 17px;
-  line-height: 18px;
   color: #ffffff;
 
   width: 1200px;
-  height: 42px;
   background: #293449;
-
 }
 
 .social {
   display: inline-block;
   vertical-align: middle;
   width: 40px;
-  height: 40px;
   margin-right: 5px;
   background-color: #212a3a;
   border-radius: 50%;
