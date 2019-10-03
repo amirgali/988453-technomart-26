@@ -1,10 +1,11 @@
 body {
+  margin: 0;
+
   font-family: Cuprum, "PT Sans", sans-serif;
   font-size: 17px;
   line-height: 1.5em;
   font-weight: 400;
   color: #000000;
-  min-width: 1200px;
 
   background-color: #ffffff;
 }
@@ -60,129 +61,23 @@ h2 {
 
 /* Разметка header */
 
-.header-navigation-up {
-  font-size: 17px;
-  color: #ffffff;
-
-  width: 1200px;
-  background-color: #293449;
-
-  display: flex;
-  align-items: center;
-}
-.header-search {
-  min-width: 250px;
-}
-
-.header-search:hover,
-.header-search:hover .search-submit{
-  background-color: #212a3a;
-  color: #ffffff;
-}
-
-.search-field {
-  font-size: 17px;
-  color: #ffffff;
-  background-color: #293449;
-  border: none;
-}
-
-.search-field::-webkit-input-placeholder {
-  color: #ffffff;
-  background: #293449;
-}
-.search-field:-moz-placeholder {
-  color: #ffffff;
-  background: #293449;
-}
-.search-field:-ms-input-placeholder {
-  color: #ffffff;
-  background: #293449;
-}
-
-.booking {
-  background-color: #63a63e;
-}
-
-/* Центральная часть header */
-
-.header-content {
-  display: flex;
-  width: 940px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header-info-title {
-  font-style: italic;
-  font-size: 16px;
-  color: #ee3643;
-
-  width: 196px;
-}
-
-.header-text {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+
   align-items: center;
-  width: 270px;
-}
-
-.header-content .tel {
-  font-size: 21px;
-  color: #e9292a;
-}
-
-.header-content p {
-  font-size: 14px;
-
-  color: #32425c;
-  text-align: center;
-}
-
-
-
-.header-user {
-  display: flex;
-  font-size: 21px;
-  color: #000000;
-}
-
-.user-sign-up {
-}
-
-.user-register {
-}
-
-/* Нижняя часть header */
-
-.header-navigation-down {
-  font-size: 17px;
-  color: #ffffff;
-
+  justify-content: space-between;
   width: 940px;
-  background-color: #32425c;
+  margin: 0 auto;
+  padding: 0 10px;
 
-  display: flex;
-  margin: auto;
-
-}
-
-.header-user-list,
-.features-item,
-.product-list,
-.brands-list,
-.footer-navigation,
-.footer-social,
-.header-user {
-  list-style: none;
-  padding-left: 0;
-}
-
-.header-navigation-up a,
-.header-navigation-down a {
-  color: #ffffff;
 }
 
 .header-navigation-up a:hover,
@@ -192,22 +87,245 @@ h2 {
   background-color: #212a3a;
 }
 
+/* Верхняя часть header */
+
+  .header-navigation-up {
+    font-size: 17px;
+    align-items: center;
+    color: #ffffff;
+
+    background-color: #293449;
+  }
+
+  .header-search {
+    min-width: 250px;
+    padding: 15px 21px;
+  }
+
+  .search-field {
+    font-size: 17px;
+    color: #ffffff;
+
+    background-color: #293449;
+    border: none;
+  }
+
+  .search-field::-webkit-input-placeholder {
+    color: #ffffff;
+    background: #293449;
+  }
+
+  .search-field:-moz-placeholder {
+    color: #ffffff;
+    background: #293449;
+  }
+
+  .search-field:-ms-input-placeholder {
+    color: #ffffff;
+    background: #293449;
+  }
+
+  .bookmarks {
+    padding: 15px 21px;
+  }
+
+  .cart {
+    padding: 15px 21px;
+  }
+
+  .booking {
+    padding: 15px 21px;
+
+    background-color: #63a63e;
+  }
+
+/* Центральная часть header */
+
+  .header-content {
+    margin-top: 50px;
+  }
+
+  .header-info-title {
+    margin-left: 50px;
+    width: 196px;
+
+    font-style: italic;
+    font-size: 16px;
+    color: #ee3643;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 71px;
+
+  }
+
+  .header-content .tel {
+    font-size: 21px;
+    color: #e9292a;
+  }
+
+  .header-content p {
+    font-size: 14px;
+
+    color: #32425c;
+    text-align: center;
+  }
+
+  .header-user {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+
+    font-size: 21px;
+    color: #000000;
+  }
+
+  .user-sign-up {
+    margin-left: 50px;
+  }
+
+  .user-register {
+    margin-right: 30px;
+  }
+
+/* Нижняя часть header */
+
+  .header-navigation-down {
+    display: flex;
+    margin: 0 auto;
+    width: 940px;
+
+    font-size: 17px;
+    color: #ffffff;
+
+    background-color: #32425c;
+  }
+
+  .header-navigation-down a {
+    padding: 20px 30px 18px 30px;
+  }
+
+  .header-user-list,
+  .features-item,
+  .product-list,
+  .brands-list,
+  .footer-navigation,
+  .footer-social,
+  .header-user {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .header-navigation-up a,
+  .header-navigation-down a {
+    color: #ffffff;
+  }
+
+  .header-navigation-first {
+  }
+
+
 
 /* Разметка основного контента */
 
-.features-item {
-  text-align: left;
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.features-item-title {
-  font-size: 24px;
+/* Плитка меню */
+
+  .features {
+    margin-top: 119px;
+  }
+
+  .features-item li {
+    border: 1px solid;
+    width: 300px;
+
+  }
+
+  .features-item {
+    display: flex;
+    flex-wrap: wrap;
+
+    text-align: left;
+  }
+
+  .features-item-title {
+    font-size: 24px;
+  }
+
+  .main-content-1 {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .main-content-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    order: 1;
+  }
+
+  .discount {
+  }
+
+  .delivery {
+    margin-top: 20px;
+  }
+
+  .main-menu-slider {
+    border: 1px solid;
+    width: 620px;
+    height: 266px;
+  }
+
+  .filter-title {
+    margin-bottom: 13px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+/* Популярные товары */
+.main-goods {
+  margin-top: 53px;
+  flex-direction: column;
 }
 
-.filter-title {
-  margin-bottom: 13px;
-  font-size: 13px;
-  font-weight: 400;
-  text-transform: uppercase;
+.goods {
+  display: flex;
+  width: 940px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods .title {
+  width: 320px;
+}
+.goods .button {
+  padding: 14px 55px;
+
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.goods .button:hover {
+  background-color: #ca2c37;
+}
+
+
+
+.product-list {
+
 }
 
 /* Service */
@@ -244,6 +362,7 @@ h2 {
   vertical-align: middle;
   width: 40px;
   margin-right: 5px;
+
   background-color: #212a3a;
   border-radius: 50%;
 }

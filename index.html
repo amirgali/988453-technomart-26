@@ -11,17 +11,21 @@
   <header class="header">
     <!-- 1. Верхнее меню -->
     <nav class="header-navigation-up">
-      <a  class="logo" href="index.html"><img src="img/logo.png" width="220" height="47" alt="Логотип сайта «Техномарт»"> </a>
-      <form class="header-search" action="#" method="get">
-        <input class="search-field" type="text" name="header-search" placeholder="Поиск:">
-        <button class="search-submit" type="submit"></button>
-      </form>
-      <a href="#">Закладки: 0</a>
-      <a href="#">Корзина: 0</a>
-      <a class="booking" href="#">Оформить заказ</a>
+      <div class="container">
+        <a  class="logo" href="index.html">
+          <img src="img/logo.png" width="220" height="47" alt="Логотип сайта «Техномарт»">
+        </a>
+        <form class="header-search" action="#" method="get">
+          <input class="search-field" type="text" name="header-search" placeholder="Поиск:">
+          <button class="search-submit" type="submit"></button>
+        </form>
+        <a class="bookmarks" href="#">Закладки: 0</a>
+        <a class="cart" href="#">Корзина: 0</a>
+        <a class="booking" href="#">Оформить заказ</a>
+      </div>
     </nav>
     <!-- 2. Строчка с формой входа -->
-    <div class="header-content">
+    <div class="header-content container">
       <h1 class="header-info-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div class="header-text">
         <span class="tel">+7(812)555-05-55</span>
@@ -34,7 +38,7 @@
     </div>
     <!-- 3. Основная навигация -->
     <nav class="header-navigation-down">
-      <a href="index.html">Главная</a>
+      <a class="header-navigation-first" href="index.html">Главная</a>
       <a href="#">Компания</a>
       <a href="catalog.html">Каталог</a>
       <a href="#">Новости</a>
@@ -47,43 +51,50 @@
   <!-- 4. Меню товаров -->
   <main class="main-content">
     <section class="features">
-      <ul class="features-item">
-        <li class="new">
+      <ul class="features-item container">
+        <li class="materials">
           <h3 class="features-item-title">Материалы</h3>
           <a href="#">На любой вкус</a>
         </li>
-        <li>
+        <li class="tool">
           <h3 class="features-item-title">Инструмент</h3>
           <a href="#">На все случаи жизни</a>
         </li>
-        <li>
+        <li class="technics">
           <h3 class="features-item-title">Техника</h3>
           <a href="#">Для стройки</a>
         </li>
-        <li>
-          <h3 class="features-item-title">Скидки 50%</h3>
-          <a href="#">На 350 товаров</a>
-        </li>
-        <li>
-          <h3 class="features-item-title">Доставка</h3>
-          <a href="#">Бесплатно</a>
-        </li>
+        <div class="main-content-1">
+          <div class="main-content-2">
+            <li class="discount">
+              <h3 class="features-item-title">Скидки 50%</h3>
+              <a href="#">На 350 товаров</a>
+            </li>
+            <li class="delivery">
+              <h3 class="features-item-title">Доставка</h3>
+              <a href="#">Бесплатно</a>
+            </li>
+          </div>
+          <form class="main-menu-slider" action="#" method="get">
+            <h2>Дрели</h2><p>Соседям на радость</p>
+            <a href="catalog.html" class="button">Открыть каталог</a>
+            <input type="radio" id="btn-1" name="slaider" checked>
+            <input type="radio" id="btn-2" name="slaider">
+            <label for="btn-1" aria-label="кнопка слайда «назад»"></label>
+            <label for="btn-2" aria-label="кнопка слайда «вперед»"></label>
+          </form>
+        </div>
       </ul>
-      <form action="#" method="get">
-        <h2>Дрели</h2><p>Соседям на радость</p>
-        <a href="catalog.html" class="button">Открыть каталог</a>
-        <input type="radio" id="btn-1" name="slaider" checked>
-        <input type="radio" id="btn-2" name="slaider">
-        <label for="btn-1" aria-label="кнопка слайда «назад»"></label>
-        <label for="btn-2" aria-label="кнопка слайда «вперед»"></label>
-      </form>
     </section>
 
     <!-- 5. Популярные товары. -->
-    <section>
-      <h2 class="title">Популярные товары:</h2>
-      <a href="#" class="button">Все популярные товары</a>
-      <ul class="product-list">
+    <section class="main-goods container">
+      <div class="goods">
+        <h2 class="title">Популярные товары:</h2>
+        <a href="#" class="button">Все популярные товары</a>
+      </div>
+
+      <ul class="product-list container">
         <li>
           <h3>
             <a href="#">
@@ -93,6 +104,10 @@
           <a href="#">
             <img src="img/bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
           </a>
+          <p>
+            <a href="#">Купить</a>
+            <a href="#">В закладки</a>
+          </p>
           <p class="old-price">32500 Р.</p>
           <p class="price">25500 Р.</p>
         </li>
@@ -106,6 +121,10 @@
           <a href="#">
             <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
           </a>
+          <p>
+            <a href="#">Купить</a>
+            <a href="#">В закладки</a>
+          </p>
           <p class="old-price">22500 Р.</p>
           <p class="price">15500 Р.</p>
         </li>
@@ -119,6 +138,10 @@
           <a href="#">
             <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
           </a>
+          <p>
+            <a href="#">Купить</a>
+            <a href="#">В закладки</a>
+          </p>
           <p class="old-price">30500 Р.</p>
           <p class="price">25500 Р.</p>
         </li>
@@ -132,12 +155,16 @@
           <a href="#">
             <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
           </a>
+          <p>
+            <a href="#">Купить</a>
+            <a href="#">В закладки</a>
+          </p>
           <p class="price">12500 Р.</p>
         </li>
       </ul>
     </section>
     <!-- 6. Популярные производители -->
-    <section>
+    <section class="container">
       <h2 class="title">Популярные производители:</h2>
       <a href="#" class="button">Все производители</a>
       <ul class="brands-list">
@@ -185,7 +212,7 @@
     </section>
 
     <!-- 7. Сервисы  -->
-    <section class="service">
+    <section class="service container">
       <h2 class="title">Сервисы</h2>
       <p class="page-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
       Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -326,18 +353,18 @@
             <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на сайт htmlacademy.ru">htmlacademy.ru</a></p>
           </div>
         </div>
-      </footer>
-      <!-- pop-up -->
-      <form action="#" method="get">
-        <label for="feedback-name">Ваше имя:</label>
-        <input type="text" id="feedback-name" name="feedback-name" placeholder="Имя Фамилия">
-        <label for="feedback-email">Ваш e-mail:</label>
-        <input type="email" id="feedback-email" name="feedback-email" placeholder="email@exemple.com">
-        <label for="feedback-text">Текст письма:</label>
-        <textarea id="feedback-text" name="feedback-text" rows="5" cols="20" placeholder="В свободной форме"></textarea>
-        <button type="submit">Отправить</button>
-        <button type="button" aria-label="Кнопка «Закрыть»">x</button>
-      </form>
-      <!-- Здесь будет javascript -->
-    </body>
-    </html>
+  </footer>
+  <!-- pop-up -->
+  <form action="#" method="get">
+    <label for="feedback-name">Ваше имя:</label>
+    <input type="text" id="feedback-name" name="feedback-name" placeholder="Имя Фамилия">
+    <label for="feedback-email">Ваш e-mail:</label>
+    <input type="email" id="feedback-email" name="feedback-email" placeholder="email@exemple.com">
+    <label for="feedback-text">Текст письма:</label>
+    <textarea id="feedback-text" name="feedback-text" rows="5" cols="20" placeholder="В свободной форме"></textarea>
+    <button type="submit">Отправить</button>
+    <button type="button" aria-label="Кнопка «Закрыть»">x</button>
+  </form>
+  <!-- Здесь будет javascript -->
+</body>
+</html>
