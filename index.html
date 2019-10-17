@@ -10,18 +10,20 @@
 <body>
   <header class="header">
     <!-- 1. Верхнее меню -->
-    <nav class="header-navigation-up container">
-      <a  class="logo" href="index.html">
-        <img src="img/logo.png" width="220" height="47" alt="Логотип сайта «Техномарт»">
-      </a>
-      <form class="header-search" action="#" method="get">
-        <input class="search-field" type="text" name="header-search" placeholder="Поиск:">
-        <button class="search-submit" type="submit"></button>
-      </form>
-      <a class="bookmarks" href="#">Закладки: 0</a>
-      <a class="cart" href="#">Корзина: 0</a>
-      <a class="booking" href="#">Оформить заказ</a>
-    </nav>
+    <div class="header-top-wrapper">
+      <nav class="header-navigation-up container">
+        <a  class="logo" href="index.html">
+          <img src="img/logo.png" width="220" height="47" alt="Логотип сайта «Техномарт»">
+        </a>
+        <form class="header-search" action="#" method="get">
+          <input class="search-field" type="text" name="header-search" placeholder="Поиск:">
+          <button class="search-submit" type="submit"></button>
+        </form>
+        <a class="bookmarks" href="#">Закладки: 0</a>
+        <a class="cart" href="#">Корзина: 0</a>
+        <a class="booking" href="#">Оформить заказ</a>
+      </nav>
+  </div>
     <!-- 2. Строчка с формой входа -->
     <div class="header-content container">
       <h1 class="header-info-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -70,8 +72,15 @@
           <h3 class="features-item-title">Доставка</h3>
           <a href="#">Бесплатно</a>
         </li>
-        <li class="slider">
-
+        <li class="menu-slider slider">
+          <div class="direction-buttons">Слайдер
+            <button class="direction-btn direction-btn-left" type="button">
+              <span class="visually-hidden">Слайд влево</span>
+            </button>
+            <button class="direction-btn direction-btn-right" type="button">
+              <span class="visually-hidden">Слайд вправо</span>
+            </button>
+          </div>
         </li>
       </ul>
     </section>
@@ -83,73 +92,60 @@
         <a href="#" class="button popular-link">Все популярные товары</a>
       </div>
 
-      <ul class="product-list">
-        <li class="popular-item">
-          <h3>
-            <a class="popular-name" href="#">
-              <span>Перфоратор BOSCH</span> BFG 9000
-            </a>
-          </h3>
-          <a href="#">
-            <img src="img/bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-          </a>
-          <p>
-            <a href="#">Купить</a>
-            <a href="#">В закладки</a>
-          </p>
-          <p class="old-price">32500 Р.</p>
-          <p class="price">25500 Р.</p>
+      <ul class="catalog-items">
+
+        <li class="catalog-item">
+
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
+          <div class="image">
+            <img src="img/bfg-9000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 9000">
+          </div>
+          <div class="title">Перфоратор BOSCH BFG 9000</div>
+          <div class="discount">32 500 Р.</div>
+          <div class="price">25 500 Р.</div>
         </li>
 
-        <li class="popular-item">
-          <h4>
-            <a class="popular-name" href="#">
-              <span>Перфоратор BOSCH</span> BFG 3000
-            </a>
-          </h4>
-          <a href="#">
+        <li class="catalog-item">
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
+          <div class="image">
             <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-          </a>
-          <p>
-            <a href="#">Купить</a>
-            <a href="#">В закладки</a>
-          </p>
-          <p class="old-price">22500 Р.</p>
-          <p class="price">15500 Р.</p>
+          </div>
+          <div class="title">Перфоратор BOSCH BFG 3000</div>
+          <div class="discount">22500 Р.</div>
+          <div class="price">15500 Р.</div>
         </li>
 
-        <li class="popular-item">
-          <h4>
-            <a class="popular-name" href="#">
-              <span>Перфоратор BOSCH</span> BFG 6000
-            </a>
-          </h4>
-          <a href="#">
+        <li class="catalog-item special">
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
+          <div class="image">
             <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-          </a>
-          <p>
-            <a href="#">Купить</a>
-            <a href="#">В закладки</a>
-          </p>
-          <p class="old-price">30500 Р.</p>
-          <p class="price">25500 Р.</p>
+          </div>
+          <div class="title">Перфоратор BOSCH BFG 6000</div>
+          <div class="discount">30500 Р.</div>
+          <div class="price">25500 Р.</div>
         </li>
 
-        <li class="popular-item">
-          <div class="sticker sticker-new"></div>
-          <h4>
-            <a class="popular-name" href="#">
-              <span>Перфоратор BOSCH BFG 2000</span>
-            </a>
-          </h4>
-          <a href="#">
+        <li class="catalog-item special-two">
+          <div class="flag flag-new">новинка</div>
+
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
+          <div class="image">
             <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-          </a>
-          <p>
-            <a href="#">Купить</a>
-            <a href="#">В закладки</a>
-          </p>
-          <p class="price">12500 Р.</p>
+          </div>
+          <div class="title">Перфоратор BOSCH BFG 6000</div>
+          <div class="price">12500 Р.</div>
         </li>
       </ul>
     </section>
@@ -267,6 +263,7 @@
   <!-- 9. Меню подвала -->
 
   <footer>
+    <div class="footer-top-wrapper">
     <section class="footer-menu">
       <h2 class="visually-hidden">Контакты и меню сайта</h2>
       <div class="footer-container container">
@@ -349,6 +346,7 @@
             </div>
           </div>
         </section>
+      </div>
       </footer>
       <!-- pop-up -->
       <form action="#" method="get">
