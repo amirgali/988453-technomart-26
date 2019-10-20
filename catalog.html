@@ -70,45 +70,63 @@
 
       <section class="filters">
         <h3 class="visually-hidden">Фильтр:</h3>
-        <form action="#" method="get">
+        <form class="filter-form" action="#" method="get">
           <p class="filter-title">Фильтр:</p>
-          <fieldset>
-            <legend>Цена:</legend>
-            <div>
-              <div>
-                <div>
-                  <div></div>
-                </div>
-                <div></div>
-                <div></div>
-              </div>
-              <div>
-                <input type="number" name="price-min" value="0"><span> — </span>
-                <input type="number" name="price-max" value="30000">
+          <fieldset class="filter filter-range">
+            <legend class="filter-title price-legend">Цена:</legend>
+            <div class="price-controls">
+              <div class="range-controls">
+                <div class="scale"></div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
             </div>
+            <label class="price-catalog">
+              <input class="range-input" type="number" name="price-min" value="0" size="5">
+            </label>
+            <label>
+              <input class="range-input range-input-max" type="number" name="range-max" value="30000" size="5">
+            </label>
           </fieldset>
-          <fieldset>
-            <legend>Производители:</legend>
-            <input type="checkbox" name="checkbox" id="bosch">
-            <label for="bosch">Bosch</label>
-            <input type="checkbox" name="checkbox" id="interskol">
-            <label for="interskol">Интерскол</label>
-            <input type="checkbox" name="checkbox" id="Makita">
-            <label for="Makita">Makita</label>
-            <input type="checkbox" name="checkbox" id="Dewalt">
-            <label for="Dewalt">Dewalt</label>
-            <input type="checkbox" name="checkbox" id="Hitachi">
-            <label for="Hitachi">Hitachi</label>
+          <fieldset class="filter filter-manufacturers">
+            <legend class="filter-title">Производители:</legend>
+            <ul class="filter-list">
+              <li class="filter-option filter-option-checkbox">
+                <input class="visually-hidden" type="checkbox" name="filter-bosch" id="bosch" checked>
+                <label for="bosch">Bosch</label>
+              </li>
+              <li class="filter-option filter-option-checkbox">
+                <input class="visually-hidden" type="checkbox" name="filter-interskol" id="interskol">
+                <label for="interskol">Интерскол</label>
+              </li>
+              <li class="filter-option filter-option-checkbox">
+                <input class="visually-hidden" type="checkbox" name="filter-makita" id="makita" checked>
+                <label for="makita">Makita</label>
+              </li>
+              <li class="filter-option filter-option-checkbox">
+                <input class="visually-hidden" type="checkbox" name="filter-dewalt" id="dewalt">
+                <label for="dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option filter-option-checkbox">
+                <input class="visually-hidden" type="checkbox" name="filter-hitachi" id="hitachi">
+                <label for="hitachi">Hitachi</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset>
-            <legend>Питание:</legend>
-            <input type="radio" name="radio" id="accumulator">
-            <label for="accumulator">Аккумуляторные</label>
-            <input type="radio" name="radio" id="net">
-            <label for="net">Сетевые</label>
+          <fieldset class="filter filter-power">
+            <legend class="filter-title">Питание:</legend>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <input class="visually-hidden" type="radio" name="power-battery" id="accumulator" checked>
+                <label for="accumulator">Аккумуляторные</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden" type="radio" name="power-mains-supply" id="net">
+                <label for="net">Сетевые</label>
+              </li>
+            </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -176,6 +194,7 @@
               <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </div>
             <div class="title">Перфоратор BOSCH BFG 2000</div>
+            <div class="discount"></div>
             <div class="price">12 500 Р.</div>
           </li>
 
@@ -215,6 +234,7 @@
               <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </div>
             <div class="title">Перфоратор BOSCH BFG 2000</div>
+            <div class="discount"></div>
             <div class="price">12 500 Р.</div>
           </li>
 
@@ -254,15 +274,16 @@
               <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </div>
             <div class="title">Перфоратор BOSCH BFG 2000</div>
+            <div class="discount"></div>
             <div class="price">12 500 Р.</div>
           </li>
         </ul>
 
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
+          <li><a class="active-page" href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a class="paginator-next-page" href="#">Следующая</a></li>
         </ul>
       </section>
 
@@ -366,11 +387,18 @@
       </footer>
 
       <!-- pop-up -->
-      <form action="#" method="get">
-        Товар добавлен в корзину!
-        <button type="submit">Оформить заказ</button>
-      </form>
-      <button type="button">Продолжить покупки</button>
+      <section class="modal-order">
+        <div class="modal-fieldset">
+          <button class="modal-close close-btn" type="button">
+            <span class="visually-hidden">Закрыть форму форму заказа</span>
+          </button>
+          <h2>Товар добавлен в корзину!</h2>
+        </div>
+        <div class="modal-button-container order-btn-container">
+          <input class="button-link order-btn" type="submit" value="Оформить заказ">
+          <button class="order-btn continue-btn close-btn" type="button">Продолжить покупки</button>
+        </div>
+      </section>
 
       <!-- Здесь будет javascript -->
     </body>
