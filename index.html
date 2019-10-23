@@ -231,6 +231,35 @@
 
       <!-- 7. Сервисы  -->
       <section class="service container">
+        <div class="services-header">
+          <h2 class="title">Сервисы</h2>
+          <p class="page-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        </div>
+        <dl>
+          <dt class="service-active">Доставка</dt>
+          <dd class="service-active">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+          </dd>
+
+          <dt class="service-active">Гарантия</dt>
+          <dd class="service-active">
+            <h2>Гарантия</h2>
+            <p>Если купленный у нас товар поломается или заискрит,<br>
+            а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+          Дом уж восстановите как-нибудь сами.</p>
+          </dd>
+
+          <dt class="service-active">Кредит</dt>
+          <dd class="service-active">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще!<br>
+          Кредитные консультанты придут вам на помощь.</p>
+          </dd>
+        </dl>
+      </section>
+        <!--
         <div class="services-container">
           <div class="services-header">
             <h2 class="title">Сервисы</h2>
@@ -263,7 +292,7 @@
           Кредитные консультанты придут вам на помощь.</p>
           <a href="#" class="visually-hidden">Отправить заявку</a>
         </div>
-      </section>
+      </section> -->
 
       <!-- 8. О компании -->
       <section class="about container">
@@ -284,7 +313,7 @@
           <h2 class="title">Контакты</h2>
           <p class="page-text">Вы можете забрать товар сами заехав в наш офис:</p>
           <a href="#"><img src="img/maps.jpg" width="300" height="158" alt="Карта с расположением компании: г.Санкт-Петербург, ул. Конюшенная, д.19/8"></a>
-          <a href="#" class="button popular-link">Заблудились? Напишите нам!</a>
+          <a href="#" class="button popular-link link-popup">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
@@ -378,9 +407,9 @@
           </div>
         </footer>
         <!-- pop-up -->
-        <section class="modal modal-feedbeck">
+        <section class="modal modal-feedback">
           <h2 class="visually-hidden">Форма обратной связи</h2>
-          <form class="feedbeck-form" action="#" method="get">
+          <form class="feedback-form" action="#" method="get">
             <div class="modal-row-wrapper">
               <p>
                 <label for="feedback-name">Ваше имя:</label>
@@ -403,10 +432,32 @@
         <section class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <p>
-            <img src="img/modal-maps.png" width="940px" height="476px" alt="Карта с расположением компании: г.Санкт-Петербург, ул. Конюшенная, д.19/8">
+            <img src="img/modal-maps.png" width="940" height="476" alt="Карта с расположением компании: г.Санкт-Петербург, ул. Конюшенная, д.19/8">
           </p>
           <button class="modal-close" type="button" aria-label="Кнопка «Закрыть»"><span class="visually-hidden">x</span></button>
         </section>
         <!-- Здесь будет javascript -->
+        <script>
+          var link = document.querySelector(".link-popup");
+          var popup = document.querySelector(".modal-feedback");
+          var close = document.querySelector(".modal-close");
+
+          link.addEventListener("click", function (evt) {
+            //отменяет действие по умолчанию
+            evt.preventDefault();
+            console.log("Клик по ссылке вход");
+            // Найдем модальное окно
+            popup.classList.add("modal-show");
+          });
+
+          // Закрываем модальное окно
+          close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+          });
+
+
+
+        </script>
       </body>
       </html>

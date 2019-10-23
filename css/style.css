@@ -1162,7 +1162,7 @@ h2 {
   height: 2px;
 
   background-color: #00ca74;
-}
+  }
 
   .range-toggle {
     position: absolute;
@@ -1376,6 +1376,9 @@ h2 {
     border-color: #ee3643;
   }
 /* модальное окно CATALOG*/
+  .modal-show {
+    display: block;
+  }
 
   .modal-order {
     position: fixed;
@@ -1499,7 +1502,7 @@ h2 {
     border-top: 7px solid #ff5358;
   }
 
-  .modal-feedbeck {
+  .modal-feedback {
     box-sizing: border-box;
     top: 270px;
     left: 50%;
@@ -1517,14 +1520,14 @@ h2 {
     justify-content: space-between;
   }
 
-  .feedbeck-form label {
+  .feedback-form label {
     font-size: 18px;
     line-height: 18px;
     font-family: "Cuprum", PT-Sans, sans-serif;
     font-weight: 400;
   }
 
-  .feedbeck-form p {
+  .feedback-form p {
     margin: 0;
     margin-bottom: 10px;
   }
@@ -1533,9 +1536,9 @@ h2 {
     width: 48%;
   }
 
-  .feedbeck-form input[type="text"],
-  .feedbeck-form input[type="email"],
-  .feedbeck-form textarea {
+  .feedback-form input[type="text"],
+  .feedback-form input[type="email"],
+  .feedback-form textarea {
     box-sizing: border-box;
     width: 100%;
     padding: 8px 15px;
@@ -1584,15 +1587,15 @@ h2 {
     transform: rotate(-45deg);
   }
 
-  .modal-feedbeck .button {
+  .modal-feedback .button {
     width: 100%;
 
     color: #fff;
     background-color: #ee3643;
   }
 
-  .modal-feedbeck .button:hover,
-  .modal-feedbeck .button:focus {
+  .modal-feedback .button:hover,
+  .modal-feedback .button:focus {
     background-color: #ca2c37;
   }
 
