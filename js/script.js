@@ -9,17 +9,17 @@ var linkmap = document.querySelector('.open-map');
 var modalmap = document.querySelector('.modal-map')
 var mapclose = document.querySelector('.modal-close-map');
 
-link.addEventListener("click", function (evt) {
-            //отменяет действие по умолчанию
+link.addEventListener('click', function (evt) {
+//отменяет действие по умолчанию
             evt.preventDefault();
-            // Найдем модальное окно
-            popup.classList.add("modal-show");
+// Найдем модальное окно
+            popup.classList.add('modal-show');
           });
 
 // Закрываем модальное окно
-close.addEventListener("click", function (evt) {
+close.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.remove("modal-show");
+  popup.classList.remove('modal-show');
 });
 
 
@@ -28,7 +28,7 @@ close.addEventListener("click", function (evt) {
 
 function hideTabsContent(a) {
   for (var i=a; i<tabContent.length; i++) {
-    tabContent[i].classList.add("service-item-content-hide");
+    tabContent[i].classList.add('service-item-content-hide');
   }
 }
 
@@ -56,7 +56,7 @@ document.querySelector('.service-wrapper').onclick= function (event) {
     if (tabContent[b].classList.contains('service-item-content-hide')) {
       hideTabsContent(0);
       tabContent[b].classList.remove('service-item-content-hide');
-        // tabContent[b].classList.add('show');
+// tabContent[b].classList.add('show');
       }
     }
 

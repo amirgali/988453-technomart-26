@@ -1037,7 +1037,7 @@ h2 {
   font-size: 13px;
   line-height: 24px;
   font-family: Cuprum, "PT Sans", sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   color: #000000;
 }
 
@@ -1158,7 +1158,7 @@ h2 {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  line-height: 24psx;
+  line-height: 24px;
   font-weight: 400;
 
 }
@@ -1891,7 +1891,7 @@ h2 {
 
   position: absolute;
   top: 6px;
-  right: 18;
+  right: -12px;
 
   width: 25px;
   height: 4px;
