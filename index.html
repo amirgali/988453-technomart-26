@@ -236,63 +236,30 @@
           <p class="page-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-        <dl>
-          <dt class="service-active">Доставка</dt>
-          <dd class="service-active">
-            <h2>Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-          </dd>
-
-          <dt class="service-active">Гарантия</dt>
-          <dd class="service-active">
-            <h2>Гарантия</h2>
-            <p>Если купленный у нас товар поломается или заискрит,<br>
-            а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-          Дом уж восстановите как-нибудь сами.</p>
-          </dd>
-
-          <dt class="service-active">Кредит</dt>
-          <dd class="service-active">
-            <h2>Кредит</h2>
-            <p>Залезть в долговую яму стало проще!<br>
-          Кредитные консультанты придут вам на помощь.</p>
-          </dd>
-        </dl>
-      </section>
-        <!--
-        <div class="services-container">
-          <div class="services-header">
-            <h2 class="title">Сервисы</h2>
-            <p class="page-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          </div>
-
-          <ul class="service-slider">
-            <li>
-              <div class="services-button-wrapper">
-                <input class="services-btn services-btn-active" type="button" id="slide-1" value="Доставка">
-                <input class="services-btn" type="button" id="slide-2" value="Гарантия">
-                <input class="services-btn" type="button" id="slide-3" value="Кредит">
-              </div>
-            </li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Кредит</a></li>
+        <div class="service-wrapper">
+          <ul class="service-list-title">
+            <li class="service-item-title service-item-title-active">Доставка</li>
+            <li class="service-item-title">Гарантия</li>
+            <li class="service-item-title">Кредит</li>
           </ul>
-          <div class="service-slide-auto">
-            <h2 class="service-slide-title">Доставка</h2>
-            <p class="page-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </div>
-          <h2 class="service-slide-title visually-hidden">Гарантия</h2>
-          <p class="page-text visually-hidden">Если купленный у нас товар поломается или заискрит,
-            а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-          Дом уж восстановите как-нибудь сами.</p>
-          <h2 class="service-slide-title visually-hidden">Кредит</h2>
-          <p class="page-text visually-hidden">Залезть в долговую яму стало проще!
-          Кредитные консультанты придут вам на помощь.</p>
-          <a href="#" class="visually-hidden">Отправить заявку</a>
+          <ul class="service-list-content">
+            <li class="service-item-content service-item-content-delivery">
+              <h2 class="service-item-content-heading">Доставка</h2>
+              <p class="service-item-content-text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            </li>
+            <li class="service-item-content service-item-content-warranty">
+              <h2 class="service-item-content-heading">Гарантия</h2>
+              <p class="service-item-content-text">Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+            Дом уж восстановите как-нибудь сами.</p>
+            </li>
+            <li class="service-item-content service-item-content-credit">
+              <h2 class="service-item-content-heading">Кредит</h2>
+              <p class="service-item-content-text">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
+            </li>
+          </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- 8. О компании -->
       <section class="about container">
@@ -312,7 +279,7 @@
         <div class="about-info">
           <h2 class="title">Контакты</h2>
           <p class="page-text">Вы можете забрать товар сами заехав в наш офис:</p>
-          <a href="#"><img src="img/maps.jpg" width="300" height="158" alt="Карта с расположением компании: г.Санкт-Петербург, ул. Конюшенная, д.19/8"></a>
+          <a class="open-map" href="#"><img src="img/maps.jpg" width="300" height="158" alt="Карта с расположением компании: г.Санкт-Петербург, ул. Конюшенная, д.19/8"></a>
           <a href="#" class="button popular-link link-popup">Заблудились? Напишите нам!</a>
         </div>
       </section>
@@ -406,6 +373,7 @@
             </section>
           </div>
         </footer>
+
         <!-- pop-up -->
         <section class="modal modal-feedback">
           <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -434,30 +402,10 @@
           <p>
             <img src="img/modal-maps.png" width="940" height="476" alt="Карта с расположением компании: г.Санкт-Петербург, ул. Конюшенная, д.19/8">
           </p>
-          <button class="modal-close" type="button" aria-label="Кнопка «Закрыть»"><span class="visually-hidden">x</span></button>
+          <button class="modal-close modal-close-map" type="button" aria-label="Кнопка «Закрыть»"><span class="visually-hidden">x</span></button>
         </section>
         <!-- Здесь будет javascript -->
-        <script>
-          var link = document.querySelector(".link-popup");
-          var popup = document.querySelector(".modal-feedback");
-          var close = document.querySelector(".modal-close");
-
-          link.addEventListener("click", function (evt) {
-            //отменяет действие по умолчанию
-            evt.preventDefault();
-            console.log("Клик по ссылке вход");
-            // Найдем модальное окно
-            popup.classList.add("modal-show");
-          });
-
-          // Закрываем модальное окно
-          close.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-          });
-
-
-
+        <script src="js/script.js">
         </script>
       </body>
       </html>

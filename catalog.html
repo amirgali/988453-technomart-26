@@ -20,7 +20,7 @@
           <button class="search-submit" type="submit"></button>
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
-        <a class="cart-catalog" href="#">Корзина: 0</a>
+        <a class="cart-catalog" href="#">Корзина: 10</a>
         <a class="booking" href="#">Оформить заказ</a>
       </nav>
     </div>
@@ -31,10 +31,34 @@
         <span class="tel">+7 (812) 555-05-55</span>
         <p>г.Санкт-Петербург, ул. Конюшенная, д.19/8</p>
       </div>
-      <ul class="header-user">
-        <li class="user-sign-up"><a href="#">Войти</a></li>
-        <li class="user-register"><a href="#">Регистрация</a></li>
-      </ul>
+
+      <div class="header-login">
+          <ul class="header-login-list">
+            <!--
+            <li>
+              <a class="header-login-link header-hide" href="#">Войти</a>
+            </li>
+            <li>
+              <a class="header-hide" href="#">Регистрация</a>
+            </li>
+          -->
+            <li class="">
+              <a class="header-login-username" href="#">Равшан Джамшутович</a>
+              <a class="header-login-logout" href="#">
+                <span class="visually-hidden">Выйти из профиля</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="header-order-list">
+            <li>
+              <a href="#">Мои заказы</a>
+            </li>
+            <li>
+              <a href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+
     </div>
     <!-- 3. Основная навигация -->
     <nav class="header-navigation-down container">
@@ -135,13 +159,13 @@
           <p>Сортировка:</p>
           <ul class="sorting-list">
             <li>
-              <a href="#">По цене</a>
+              <a class="sort-list" href="#">По цене</a>
             </li>
             <li>
-              <a href="#">По типу</a>
+              <a class="sort-list" href="#">По типу</a>
             </li>
             <li>
-              <a href="#">По функционалу</a>
+              <a class="sort-list" href="#">По функционалу</a>
             </li>
             <li>
               <a class="arrow arrow-up" href="#" aria-label=
