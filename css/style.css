@@ -293,6 +293,15 @@ h2 {
   background-color: #ee3643;
 }
 
+.header-navigation-up .cart-catalog:hover {
+  background-color: #ca2c37;
+}
+
+.cart-catalog:active {
+  color: #b3b4b6;
+  background-color: #ba2732;
+}
+
 .cart-catalog::before {
   position: absolute;
   top: 50%;
@@ -317,14 +326,7 @@ h2 {
   opacity: 0.5;
 }
 
-.header-navigation-up .cart-catalog:hover {
-  background-color: #ca2c37;
-}
 
-.header-navigation-up .cart-catalog:active {
-  color: #b3b4b6;
-  background-color: #ba2732;
-}
 
 .booking {
   margin: 0;
