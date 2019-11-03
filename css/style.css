@@ -124,7 +124,6 @@ h2 {
   background-color: #f3f7f9;
 }
 
-
 .header-navigation-up a:hover,
 .header-navigation-up a:focus,
 .header-navigation-down a:hover,
@@ -160,7 +159,6 @@ h2 {
   font-size: 17px;
   color: #ffffff;
 
-
   background-color: #293449;
 }
 
@@ -189,6 +187,7 @@ h2 {
 
 .search-field:focus {
   color: #000;
+
   background-color: #fff;
 }
 
@@ -231,8 +230,10 @@ h2 {
   z-index: 1;
   width: 14px;
   height: 16px;
+
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
+
   opacity: 0.3;
   content: "";
 }
@@ -253,8 +254,10 @@ h2 {
   z-index: 1;
   width: 15px;
   height: 15px;
+
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
+
   opacity: 0.3;
   content: "";
 }
@@ -298,14 +301,29 @@ h2 {
   z-index: 1;
   width: 15px;
   height: 15px;
+
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
+
   opacity: 0.3;
   content: "";
 }
 
+.cart-catalog:hover::before {
+  opacity: 1;
+}
+
+.cart-catalog:active::before {
+  opacity: 0.5;
+}
+
 .header-navigation-up .cart-catalog:hover {
   background-color: #ca2c37;
+}
+
+.header-navigation-up .cart-catalog:active {
+  color: #b3b4b6;
+  background-color: #ba2732;
 }
 
 .booking {
@@ -331,6 +349,7 @@ h2 {
 
 .header-user {
   display: flex;
+
   font-size: 21px;
   line-height: 21px;
   font-weight: 400;
@@ -359,8 +378,10 @@ h2 {
   z-index: 1;
   width: 20px;
   height: 18px;
+
   background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
+
   opacity: 0.4;
   content: "";
 }
@@ -391,6 +412,10 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.header-content-index {
+  margin-bottom: 27px;
 }
 
 .header-info-title {
@@ -448,7 +473,6 @@ h2 {
   width: 300px;
   padding: 14px 10px 12px 13px;
   margin: 0;
-
   list-style: none;
 
   background-color: #ffffff;
@@ -493,8 +517,6 @@ h2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
-
   width: 20px;
 
   background-repeat: no-repeat;
@@ -558,7 +580,6 @@ h2 {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-
   width: 4px;
   height: 5px;
 
@@ -579,6 +600,11 @@ h2 {
 
 .header-order-list a:hover {
   color: #ee3643;
+}
+
+.header-order-list a:active {
+  color: #000000;
+  opacity: 0.3;
 }
 
 /* Нижняя часть header */
@@ -612,16 +638,15 @@ h2 {
 
 /* Разметка основного контента */
 
-
-
 /* Плитка меню */
-
+.features {
+  padding-top: 40px;
+}
 
 .features-item {
   display: grid;
   grid-template-columns: auto auto auto;
   text-align: left;
-
 }
 
 .features-item-title {
@@ -639,6 +664,7 @@ h2 {
 
   margin: 0 0 14px;
   padding: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -649,6 +675,7 @@ h2 {
   display: inline-block;
   width: 133px;
   padding: 10px 0 8px;
+
   font: inherit;
   font-size: 14px;
   line-height: 18px;
@@ -974,6 +1001,10 @@ h2 {
   background-color: #ca2c37;
 }
 
+.goods .button:active {
+  background-color: #ba2732;
+}
+
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
@@ -1069,7 +1100,7 @@ h2 {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1267,7 +1298,6 @@ h2 {
 
   background-image: url("../img/separator.png");
   background-repeat: no-repeat;
-
 }
 
 
@@ -1277,16 +1307,11 @@ h2 {
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
-
-
-
-
   color: #ffffff;
-  background-color: #32425c;
 
+  background-color: #32425c;
   border-bottom: 1px solid #293449;
   border-top: 1px solid #405069;
-
   cursor: pointer;
 }
 
@@ -1461,8 +1486,6 @@ h2 {
   font-size: 14px;
 }
 
-
-
 /* Сортировка товаров CATALOG */
 
 .arrow {
@@ -1561,7 +1584,7 @@ h2 {
 
   font-size: 13px;
   line-height: 18px;
-  font-family: Cuprum, "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
@@ -1687,7 +1710,6 @@ h2 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-
 }
 /* Пагинация */
 
@@ -1990,10 +2012,6 @@ h2 {
   background-color: #e5e5e5;
 
   content: "";
-}
-
-.filter-option-checkbox {
-
 }
 
 .filter-power {
