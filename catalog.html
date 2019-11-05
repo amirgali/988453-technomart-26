@@ -5,13 +5,13 @@
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700&amp;PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
     <!-- 1. Верхнее меню -->
     <div class="header-top-wrapper">
-      <nav class="header-navigation-up container">
+      <nav class="header-navigation-up header-navigation-up-container container">
         <a  class="logo" href="index.html">
           <img src="img/logo.png" width="220" height="47" alt="Логотип сайта «Техномарт»">
         </a>
@@ -19,16 +19,16 @@
           <input class="search-field" type="text" name="header-search" placeholder="Поиск:">
           <button class="search-submit" type="submit"></button>
         </form>
-        <a class="bookmarks" href="#">Закладки: 0</a>
+        <a class="bookmarks bookmarks-catalog" href="#">Закладки: 0</a>
         <a class="cart-catalog" href="#">Корзина: 10</a>
         <a class="booking" href="#">Оформить заказ</a>
       </nav>
     </div>
     <!-- 2. Строчка с формой входа -->
-    <div class="header-content container">
+    <div class="header-content header-content-catalog container">
       <h1 class="header-info-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="header-text">
-        <a href="tel:+78125550555" class="tel">+7 (812) 555-05-55</a>
+      <div class="header-text header-text-catalog">
+        <a href="tel:+78125550555" class="tel tel-catalog">+7 (812) 555-05-55</a>
         <p>г.Санкт-Петербург, ул. Конюшенная, д.19/8</p>
       </div>
 
@@ -55,7 +55,7 @@
 
     </div>
     <!-- 3. Основная навигация -->
-    <nav class="header-navigation-down container">
+    <nav class="header-navigation-down header-navigation-down-container container">
       <a class="header-navigation-first" href="index.html">Главная</a>
       <a href="#">Компания</a>
       <a href="catalog.html">Каталог</a>
@@ -83,7 +83,7 @@
         <a class="breadlink">Перфораторы</a>
       </li>
     </ul>
-    <div class="container">
+    <div class="container main-catalog">
       <h1 class="title title-catalog">Перфораторы</h1>
       <div class="columns-catalog">
         <section class="filters">
@@ -178,7 +178,7 @@
 
           <h3 class="visually-hidden">Список перфораторов</h3>
 
-          <ul class="catalog-items">
+          <ul class="catalog-items catalog-items-catalog">
 
             <li class="catalog-item catalog-item--inner">
               <div class="actions">
@@ -327,9 +327,7 @@
         <h2 class="visually-hidden">Контакты и меню сайта</h2>
         <div class="footer-container container">
           <div class="footer-contacts">
-            <a  class="footer-logo" href="index.html">
-              <img src="img/logo.png" width="220" height="47" alt="Логотип сайта «Техномарт»">
-            </a>
+            <a  class="footer-logo" href="index.html">Техномарт</a>
             <p>
               г.Санкт-Петербург, ул. Конюшенная, д.19/8<br>
               +7 (812) 555-05-55
@@ -419,10 +417,28 @@
             <a class="order-btn continue-btn close-btn">Продолжить покупки</a>
           </div>
         </div>
-        <button class="modal-close close-btn" type="button">
+        <button class="modal-close modal-close-order close-btn" type="button">
           <span class="visually-hidden">Закрыть форму форму заказа</span>
         </button>
       </section>
+      <script>
 
-    </body>
-    </html>
+        var bay = document.querySelectorAll('.buy');
+        var order = document.querySelector('.modal-order');
+        var orderclose = document.querySelector('.modal-close-order');
+
+        bay.addEventListener('click', function (evt) {
+        //отменяет действие по умолчанию
+        evt.preventDefault();
+        // Найдем модальное окно
+        order.classList.add('modal-order-show');
+        });
+
+        // Закрываем модальное окно
+        orderclose.addEventListener('click', function (evt) {
+          evt.preventDefault();
+          order.classList.remove('modal-order-show');
+        });
+      </script>
+  </body>
+</html>

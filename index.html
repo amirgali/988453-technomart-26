@@ -5,7 +5,7 @@
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700&amp;PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -26,7 +26,7 @@
     </div>
     <!-- 2. Строчка с формой входа -->
     <div class="header-content container header-content-index">
-      <h1 class="header-info-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h1 class="header-info-title">Интернет-магазин строительных материалов<br>и инструментов для ремонта</h1>
       <div class="header-text">
         <a href="tel:+78125550555" class="tel">+7 (812) 555-05-55</a>
         <p>г.Санкт-Петербург, ул. Конюшенная, д.19/8</p>
@@ -53,8 +53,9 @@
   <!-- 4. Меню товаров -->
   <main class="main-content">
     <section class="features container">
-      <ul class="features-item">
+      <ul class="features-item-up">
         <li class="materials menu-item">
+          <div class="flag flag-new">новинка</div>
           <h3 class="features-item-title">Материалы</h3>
           <a href="#">На любой вкус</a>
         </li>
@@ -66,15 +67,10 @@
           <h3 class="features-item-title">Техника</h3>
           <a href="#">Для стройки</a>
         </li>
-        <li class="discount menu-item">
-          <h3 class="features-item-title">Скидки 50%</h3>
-          <a href="#">На 350 товаров</a>
-        </li>
-        <li class="delivery menu-item">
-          <h3 class="features-item-title">Доставка</h3>
-          <a href="#">Бесплатно</a>
-        </li>
-        <li class="menu-slider slider">
+      </ul>
+
+      <div class="features-item-down">
+        <div class="menu-slider slider features-item-left">
           <div class="direction-buttons">
             <button class="direction-btn direction-btn-left" type="button">
               <span class="visually-hidden">Слайд влево</span>
@@ -111,8 +107,21 @@
               </section>
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+
+        <div class="features-item-right">
+          <ul class="features-item-right-list">
+            <li class="discountt menu-item">
+              <h3 class="features-item-title">Скидки 50%</h3>
+              <a href="#">На 350 товаров</a>
+            </li>
+            <li class="delivery menu-item">
+              <h3 class="features-item-title">Доставка</h3>
+              <a href="#">Бесплатно</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- 5. Популярные товары. -->
@@ -174,7 +183,7 @@
           <div class="image">
             <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
           </div>
-          <div class="title">Перфоратор BOSCH BFG 6000</div>
+          <div class="title">Перфоратор BOSCH BFG 2000</div>
           <div class="discount"></div>
           <div class="price">12500 Р.</div>
         </li>
@@ -249,7 +258,7 @@
           <ul class="service-list-content">
             <li class="service-item-content service-item-content-delivery">
               <h2 class="service-item-content-heading">Доставка</h2>
-              <p class="service-item-content-text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+              <p class="service-item-content-text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </li>
             <li class="service-item-content service-item-content-warranty">
               <h2 class="service-item-content-heading">Гарантия</h2>
@@ -275,7 +284,6 @@
           <p class="page-text">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
           <p class="page-text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:</p>
-
           <ul class="about-list">
             <li class="about-list-item">Деловые линии</li>
             <li class="about-list-item">Автотрейдинг</li>
@@ -286,7 +294,9 @@
         <div class="about-info contacts">
           <h2 class="title">Контакты</h2>
           <p class="page-text">Вы можете забрать товар сами заехав в наш офис:</p>
-          <a class="open-map" href="#"><img src="img/maps.jpg" width="300" height="158" alt="Карта с расположением компании: г.Санкт-Петербург, ул. Конюшенная, д.19/8"></a>
+          <div class="map-container">
+            <a class="open-map" href="#"><img src="img/maps.jpg" width="300" height="158" alt="Карта с расположением компании: г.Санкт-Петербург, ул. Конюшенная, д.19/8"></a>
+          </div>
           <a href="#" class="button popular-link link-popup">Заблудились? Напишите нам!</a>
         </div>
       </div>
@@ -301,9 +311,7 @@
         <h2 class="visually-hidden">Контакты и меню сайта</h2>
         <div class="footer-container container">
           <div class="footer-contacts">
-            <a  class="footer-logo" href="index.html">
-              <img src="img/logo.png" width="220" height="47" alt="Логотип сайта «Техномарт»">
-            </a>
+            <a  class="footer-logo" href="index.html">Техномарт</a>
             <p>
               г.Санкт-Петербург, ул. Конюшенная, д.19/8<br>
               +7 (812) 555-05-55

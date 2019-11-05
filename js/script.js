@@ -9,20 +9,20 @@ var linkmap = document.querySelector('.open-map');
 var modalmap = document.querySelector('.modal-map')
 var mapclose = document.querySelector('.modal-close-map');
 
+
+
 link.addEventListener('click', function (evt) {
 //отменяет действие по умолчанию
-            evt.preventDefault();
+  evt.preventDefault();
 // Найдем модальное окно
-            popup.classList.add('modal-show');
-          });
+  popup.classList.add('modal-show');
+});
 
 // Закрываем модальное окно
 close.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('modal-show');
 });
-
-
 
 
 
@@ -74,3 +74,8 @@ mapclose.addEventListener('click', function(evt) {
 });
 
 //Делаем попап в каталоге
+
+
+
+
+
