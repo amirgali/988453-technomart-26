@@ -5,10 +5,10 @@
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700&amp;PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header header-catalog">
     <!-- 1. Верхнее меню -->
     <div class="header-top-wrapper">
       <nav class="header-navigation-up header-navigation-up-container container">
@@ -26,10 +26,10 @@
     </div>
     <!-- 2. Строчка с формой входа -->
     <div class="header-content header-content-catalog container">
-      <h1 class="header-info-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h1 class="header-info-title header-info-title-catalog">Интернет-магазин строительных материалов<br>и инструментов для ремонта</h1>
       <div class="header-text header-text-catalog">
         <a href="tel:+78125550555" class="tel tel-catalog">+7 (812) 555-05-55</a>
-        <p>г.Санкт-Петербург, ул. Конюшенная, д.19/8</p>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
       </div>
 
       <div class="header-login">
@@ -134,7 +134,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter filter-power">
-              <legend class="price-legend">Питание:</legend>
+              <legend class="price-legend price-legend-power">Питание:</legend>
               <ul class="filter-list">
                 <li class="filter-option filter-option-radio">
                   <input class="visually-hidden" type="radio" name="power-battery" id="accumulator" checked>
@@ -329,7 +329,7 @@
           <div class="footer-contacts">
             <a  class="footer-logo" href="index.html">Техномарт</a>
             <p>
-              г.Санкт-Петербург, ул. Конюшенная, д.19/8<br>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>
               +7 (812) 555-05-55
             </p>
           </div>
@@ -423,21 +423,23 @@
       </section>
       <script>
 
-        var bay = document.querySelectorAll('.buy');
+        var buy = document.querySelector('.buy');
         var order = document.querySelector('.modal-order');
         var orderclose = document.querySelector('.modal-close-order');
 
-        bay.addEventListener('click', function (evt) {
+        buy.addEventListener('click', function (e) {
         //отменяет действие по умолчанию
-        evt.preventDefault();
+        e.preventDefault();
         // Найдем модальное окно
         order.classList.add('modal-order-show');
+        console.log('Открыли модально окно');
         });
 
         // Закрываем модальное окно
-        orderclose.addEventListener('click', function (evt) {
-          evt.preventDefault();
+        orderclose.addEventListener('click', function (e) {
+          e.preventDefault();
           order.classList.remove('modal-order-show');
+          console.log('Закрыли модально окно');
         });
       </script>
   </body>
